@@ -3,14 +3,14 @@ import data from "./ListData.json";
 
 function List(props) {
     // create a new array by filtering the original array
-    const filteredData = data.filter((el)  => {
+    const filteredData = data.filter((e)  => {
         // if no input then return the original 
         if(props.input === ''){
-            return el;
+            return e;
         }
         // return the item which contains the user input 
         else {
-            return el.text.toLocaleLowerCase().includes(props.input)
+            return e.text.toLocaleLowerCase().includes(props.input)
         }
     })
   return (

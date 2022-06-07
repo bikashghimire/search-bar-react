@@ -13,7 +13,7 @@ function App() {
   }
   return (
     <div className="main">
-      <h1>React Search</h1>
+      <h1>React Search Bar</h1>
       <div className="search">
         <TextField
           id="outlined-basic"
